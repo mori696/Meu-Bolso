@@ -10,3 +10,6 @@ export const COLORS = {
     success: '#2ed573',
     danger: '#ff4757',
 };
+
+export const SPACING = {sm: 8, md: 16, lg: 24, x1: 32}
+export const RADIUS = {sm: 8, md: 12, lg: 16}
