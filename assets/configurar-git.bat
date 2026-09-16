@@ -9,5 +9,6 @@ pause
 @REM git add .
 @REM git commit -m "first commit"
 @REM git branch -M main
-@REM git remote add origin https://github.com/mori696/Projeto-Mobile---Meu-Bolso.git
+@REM git remote add origin https://github.com/mori696/Meu-Bolso.git
 @REM git push -u origin main
+@REM git pull origin main --allow-unrelated-histories
