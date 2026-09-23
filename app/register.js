@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 8f01d5270c4fca04ec5236db08c4a6188124f5cb
 import { useState } from "react";
 import {
     Alert,
@@ -12,13 +16,35 @@ import {
 import { router } from "expo-router";
 import AppButton from "../src/components/AppButton";
 import AppInput from "../src/components/AppInput";
+<<<<<<< HEAD
 
+=======
+=======
+import React, { useState } from "react";
+import {
+    StyleSheet,
+    View,
+    Text,
+    TouchableOpacity,
+    KeyboardAvoidingView,
+    Platform,
+} from "react-native";
+
+import AppInput from "../src/components/AppInput";
+import AppButton from "../src/components/AppButton";
+import { router } from "expo-router";
+>>>>>>> f20662504c4a37dae431d8becaddb4b85c3162ca
+>>>>>>> 8f01d5270c4fca04ec5236db08c4a6188124f5cb
 
 export default function Register() {
     const [nome, setNome] = useState("");
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [loading, setLoading] = useState(false);
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 8f01d5270c4fca04ec5236db08c4a6188124f5cb
     const [confirm, setConfirm] = useState("");
 
     async function handleRegister(){
@@ -29,6 +55,7 @@ export default function Register() {
             return Alert.alert('Atenção', 'A senha deve ter no mínimo 6 caracteres.');
         if(password!==confirm)
             return Alert.alert('Atenção', 'As senhas não conferem.')
+<<<<<<< HEAD
 
         try{
             setLoading(true);
@@ -44,6 +71,12 @@ export default function Register() {
             setLoading(false);
         }
     };
+=======
+    };
+=======
+>>>>>>> f20662504c4a37dae431d8becaddb4b85c3162ca
+
+>>>>>>> 8f01d5270c4fca04ec5236db08c4a6188124f5cb
     return (
         <KeyboardAvoidingView
             style={styles.container}
@@ -65,7 +98,15 @@ export default function Register() {
                 />
 
                 <AppInput
+<<<<<<< HEAD
                     label="E-mail"
+=======
+<<<<<<< HEAD
+                    label="E-mail"
+=======
+                    label="Email"
+>>>>>>> f20662504c4a37dae431d8becaddb4b85c3162ca
+>>>>>>> 8f01d5270c4fca04ec5236db08c4a6188124f5cb
                     placeholder="seu@email.com"
                     autoCapitalize="none"
                     keyboardType="email-address"
@@ -83,7 +124,15 @@ export default function Register() {
 
                 <AppButton
                     title="Criar conta"
+<<<<<<< HEAD
                     loading={loading} onPress={handleRegister}
+=======
+<<<<<<< HEAD
+                    loading={loading} onPress={handleRegister}
+=======
+                    loading={loading}
+>>>>>>> f20662504c4a37dae431d8becaddb4b85c3162ca
+>>>>>>> 8f01d5270c4fca04ec5236db08c4a6188124f5cb
                 />
 
                 <TouchableOpacity

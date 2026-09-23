@@ -1,7 +1,14 @@
+<<<<<<< HEAD
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { createClient } from '@supabase/supabase-js';
 import { Platform } from 'react-native';
 import 'react-native-url-polyfill/auto';
+=======
+import 'react-native-url-polyfill/auto';
+import { createClient } from '@supabase/supabase-js';
+import AsyncStorage from '@react-native-async-storage/async-storage';
+import { Platform } from 'react-native';
+>>>>>>> 8f01d5270c4fca04ec5236db08c4a6188124f5cb
 // Adaptador de armazenamento compatível com Web e Mobile
 const CustomStorage = {
  getItem: (key) => {
@@ -34,7 +41,12 @@ const url = process.env.EXPO_PUBLIC_SUPABASE_URL;
 const key = process.env.EXPO_PUBLIC_SUPABASE_PUBLISHABLE_KEY;
 export const supabase = createClient(url, key, {
  auth: {
+<<<<<<< HEAD
  storage: CustomStorage, // Utiliza o armazenamento inteligente dependendo da plataforma
+=======
+ storage: CustomStorage, // Utiliza o armazenamento inteligente dependendo da
+plataforma
+>>>>>>> 8f01d5270c4fca04ec5236db08c4a6188124f5cb
  autoRefreshToken: true,
  persistSession: true,
  detectSessionInUrl: Platform.OS === 'web', // Detecta sessão na URL apenas na web
